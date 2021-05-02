@@ -42,24 +42,27 @@ function showError(message) {
     } 
 }
 
-function consultarApi(ciudad, pais){
+async function consultarApi(ciudad, pais){
     const apiId = 'f8317df53ef8daed7ed841cc57c01065';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${apiId}`;
-    console.log(url);
+    //console.log(url);
 
     showSpinner();
 
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            clearHTML();
-            if (data.cod === "404"){
-                showError('Ciudad no encontrada');
-            } else {
-                console.log(data);
-                showWeather(data);
-            }
-        })
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+        clearHTML();
+        if (data.cod === "404"){
+            showError('Ciudad no encontrada');
+        } else {
+            showWeather(data);
+        }
+    } catch (error) {
+        console.log(error);
+        showError('Ciudad no encontrada');
+    }
 }
 
 
