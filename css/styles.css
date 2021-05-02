@@ -1,26 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 body {
-  /*
-  background: #43cea2; /* fallback for old browsers 
-  background: -webkit-linear-gradient(
-    to right,
-    #185a9d,
-    #43cea2
-  ); /* Chrome 10-25, Safari 5.1-6 
-  background: linear-gradient(
-    to right,
-    #185a9d,
-    #43cea2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-  */
   height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 0 0.875rem;
   background: radial-gradient(80.99% 100% at 50% 0%, #ffffff 0%, #00801c 100%),
     linear-gradient(180deg, #fff500 0%, #000000 100%),
     linear-gradient(83.76deg, #5000f9 3.4%, #000000 96.6%),
     radial-gradient(70.71% 99% at 100% 39.75%, #8f00ff 0%, #0f0018 100%),
     radial-gradient(70.41% 100% at 50% 0%, #d5b300 0%, #2200aa 100%);
   background-blend-mode: overlay, difference, difference, difference, normal;
+
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  text-shadow: 1px 2px 3px hsl(0, 0%, 60%), 2px 2px 6px hsl(0, 0%, 35%);
 }
 
 .hide {

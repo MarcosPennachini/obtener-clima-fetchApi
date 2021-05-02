@@ -1,4 +1,4 @@
-# Weather App
+# Weather App ☁️
 
 ## Table of contents
 
@@ -15,7 +15,7 @@
 
 Single page application that shows weather from some locations.
 
-## Screenshot
+## Screenshot 📸
 
 ![Screenshot](./screenshot.png)
 
@@ -24,6 +24,7 @@ Single page application that shows weather from some locations.
 ### Built with
 
 Made with HTML, CSS, Tailwind and Javascript.
+Async function for the Api fetch.
 
 ### Code Example
 
@@ -36,14 +37,14 @@ formulario.insertAdjacentHTML(
 );
 ```
 
-### Notes
+### Notes 📝
 
-Practicing fetch Api
+Practicing fetch Api with Async function
 
-## Links
+## Links 🔗
 
 [Live Demo](https://obtener-clima-fetch-api.vercel.app)
 
-## Author
+## Author 🧔
 
 [Marcos Pennachini](https://www.linkedin.com/in/marcos-pennachini-b39898123/)
